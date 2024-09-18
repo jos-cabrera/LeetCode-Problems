@@ -15,7 +15,6 @@ class Solution:
                 stack.pop()
             
             stack.append([j, height])
-            print(stack)
 
         for i, height in stack:
             maxArea = max(maxArea, height * (len(heights) - i))
